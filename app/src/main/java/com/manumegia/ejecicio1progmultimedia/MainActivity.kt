@@ -60,14 +60,11 @@ class MainActivity : AppCompatActivity() {
         super.onSaveInstanceState(savedInstanceState)
         savedInstanceState.putString("Nombre", contenido.text.toString())
         savedInstanceState.putString("Apellido", contenido2.text.toString())
-
-
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
         contenido.setText(savedInstanceState.getString("Nombre"))
         contenido2.setText(savedInstanceState.getString("Apellido"))
-
     }
 }
